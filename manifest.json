@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "cses-autologin",
+    "version": "1.0",
+    "description": "Auto cses login",
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+  
+    "content_scripts": [
+      {
+        "matches": ["https://cses.fi/login"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
